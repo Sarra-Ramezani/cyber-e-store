@@ -4,15 +4,11 @@ import NavigationBar from "./NavigationBar";
 import FavoritesIcon from "../assets/icons/favorites.svg";
 import CartIcon from "../assets/icons/cart.svg";
 import UserIcon from "../assets/icons/user.svg";
-
+import CyberLogo from "../../public/cyber-logo.svg";
 export default function Header() {
   return (
     <div className="h-[5.5rem] bg-white flex flex-row justify-between items-center px-4 py-6] lg:px-40">
-      <img
-        className="w-[66px]"
-        src="../../public/cyber-logo.svg"
-        alt="cyber logo"
-      />
+      <img className="w-[66px]" src={CyberLogo} alt="cyber logo" />
       <SearchBar className="hidden sm:flex"></SearchBar>
       <NavigationBar className="hidden sm:flex"></NavigationBar>
       <div className="flex flex-row hidden sm:flex sm:gap-0 lg:gap-6">
