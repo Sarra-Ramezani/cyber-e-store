@@ -25,11 +25,17 @@ export default function NavigationBar({ className = "" }) {
     <nav
       className={`${className} flex flex-row sm:gap-3 lg:gap-14 text-black/30 text-sm`}
     >
-      {NavigationLinks.map((link) => (
-        <a key={link.key} href={link.href}>
-          {link.text}
-        </a>
-      ))}
+      {NavigationLinks.map((link) =>
+        link.id === 1 ? (
+          <a className="text-black" key={link.id} href={link.href}>
+            {link.text}
+          </a>
+        ) : (
+          <a key={link.id} href={link.href}>
+            {link.text}
+          </a>
+        )
+      )}
     </nav>
   );
 }

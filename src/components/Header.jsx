@@ -7,7 +7,7 @@ import UserIcon from "../assets/icons/user.svg";
 import CyberLogo from "../../public/cyber-logo.svg";
 export default function Header() {
   return (
-    <div className="h-[5.5rem] bg-white flex flex-row justify-between items-center px-4 py-6] lg:px-40">
+    <div className="h-[5.5rem] bg-white flex flex-row justify-between items-center px-4 py-6 sm:gap-1 lg:px-40">
       <img className="w-[66px]" src={CyberLogo} alt="cyber logo" />
       <SearchBar className="hidden sm:flex"></SearchBar>
       <NavigationBar className="hidden sm:flex"></NavigationBar>
