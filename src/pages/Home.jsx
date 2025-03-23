@@ -6,7 +6,16 @@ import Banner2 from "../assets/images/banner2-vision-pro.png";
 import Banner3 from "../assets/images/banner3-ps5.png";
 import Banner4 from "../assets/images/banner4-macbook-pro.png";
 import ShopNowBtn from "../components/ShopNowBtn.jsx";
-
+import ScrollRight from "../assets/icons/scroll-right.svg";
+import ScrollLeft from "../assets/icons/scroll-left.svg";
+import CategoryCard from "../components/CategoryCard.jsx";
+import PhonesCategoryIcon from "../assets/icons/Phones-category.svg";
+import SmartWatchesCategoryIcon from "../assets/icons/Smart-Watches-category.svg";
+import CamerasCategoryIcon from "../assets/icons/Cameras-category.svg";
+import HeadphonesCategoryIcon from "../assets/icons/Headphones-category.svg";
+import ComputerCategoryIcon from "../assets/icons/Computer-category.svg";
+import GamingCategoryIcon from "../assets/icons/Gaming-category.svg";
+import ProductCard from "../components/ProductCard.jsx";
 export default function Home() {
   const banners = [
     {
@@ -38,6 +47,45 @@ export default function Home() {
       headingFont: "sm:text-5xl",
     },
   ];
+
+  const categoryCards = [
+    {
+      categoryIcon: PhonesCategoryIcon,
+      categoryTitle: "Phones",
+    },
+    {
+      categoryIcon: SmartWatchesCategoryIcon,
+      categoryTitle: "Smart Watches",
+    },
+    {
+      categoryIcon: CamerasCategoryIcon,
+      categoryTitle: "Cameras",
+    },
+    {
+      categoryIcon: HeadphonesCategoryIcon,
+      categoryTitle: "Headphones",
+    },
+    {
+      categoryIcon: ComputerCategoryIcon,
+      categoryTitle: "Computers",
+    },
+    {
+      categoryIcon: GamingCategoryIcon,
+      categoryTitle: "Gaming",
+    },
+  ];
+
+  const productCards = [
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+    { image: Banner1, name: "Airpods Promax", price: "900" },
+  ];
+
   return (
     <div>
       <Header />
@@ -70,6 +118,62 @@ export default function Home() {
           />
         </section>
       </div>
+      <section
+        id="browse-by-category"
+        className="bg-[#FAFAFA] py-16 px-4 flex flex-col gap-12 sm:py-20 sm:px-40"
+      >
+        <div className="flex flex-row justify-between">
+          <h2 className="text-black font-medium text-2xl tracking-wider">
+            Browse By Category
+          </h2>
+          <div className="scrolling flex flex-row gap-9 w-20">
+            <img src={ScrollLeft} alt="scroll left" />
+            <img src={ScrollRight} alt="scroll right" />
+          </div>
+        </div>
+        <div
+          id="category-card-container"
+          className="flex flex-row flex-wrap gap-4 justify-center"
+        >
+          {categoryCards.map((card) => (
+            <CategoryCard
+              icon={card.categoryIcon}
+              title={card.categoryTitle}
+            ></CategoryCard>
+          ))}
+        </div>
+      </section>
+      <section
+        id="products"
+        className="bg-white py-14 px-4 sm:px-40 flex flex-col gap-8 "
+      >
+        <div id="tags">
+          <ul className="flex flex-row gap-8 text-[#8B8B8B] font-medium text-md">
+            <li>
+              <a href="/">New Arrival</a>
+            </li>
+            <li>
+              {" "}
+              <a href="/">Best Seller</a>
+            </li>
+            <li>
+              <a href="/">Featured Products</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          id="products-container"
+          className=" flex flex-row justify-center gap-4 flex-wrap"
+        >
+          {productCards.map((product) => (
+            <ProductCard
+              image={product.image}
+              name={product.name}
+              price={product.price}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
