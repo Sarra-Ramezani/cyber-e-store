@@ -13,55 +13,55 @@ export default function ProductSlider() {
         pagination={{ clickable: true }}
         loop={true}
         className="w-full"
+        spaceBetween={5}
         slidesPerView={1}
         allowTouchMove={true}
-        spaceBetween={10}
         breakpoints={{
-          800: { slidesPerView: 4, spaceBetween: 30, allowTouchMove: false },
+          800: { slidesPerView: 4 },
         }}
       >
         <SwiperSlide>
-          <div className="w-full sm:w-1/4 bg-white flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-full  bg-white flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
             <p className="font-medium text-[#909090] text-sm text-wrap">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
-            <ShopNowBtn className="border-black text-black py-4 px-14"></ShopNowBtn>
+            <ShopNowBtn className="border-black text-black py-4 w-[60%]"></ShopNowBtn>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full sm:w-1/4 bg-[#F9F9F9] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-full  bg-[#F9F9F9] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
             <p className="font-medium text-[#909090] text-sm text-wrap">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
-            <ShopNowBtn className="border-black text-black py-4 px-14"></ShopNowBtn>
+            <ShopNowBtn className="border-black text-black py-4 w-[60%]"></ShopNowBtn>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full sm:w-1/4 bg-[#EAEAEA] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-full  bg-[#EAEAEA] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
             <p className="font-medium text-[#909090] text-sm text-wrap">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
-            <ShopNowBtn className="border-black text-black py-4 px-14"></ShopNowBtn>
+            <ShopNowBtn className="border-black text-black py-4 w-[60%]"></ShopNowBtn>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full sm:w-1/4 bg-[#2C2C2C] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-full  bg-[#2C2C2C] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-white text-5xl">PS5</h3>
             <p className="font-medium text-[#909090] text-sm text-wrap">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
-            <ShopNowBtn className="border-black text-black py-4 px-14"></ShopNowBtn>
+            <ShopNowBtn className="border-black text-black py-4 w-[60%]"></ShopNowBtn>
           </div>
         </SwiperSlide>
       </Swiper>
