@@ -1,12 +1,60 @@
-# React + Vite
+# Cyber E Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cyber E Store is an online electronic devices shop built with React.js. Users can browse products, add items to their cart, manage a wishlist, and proceed to checkout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 Browse electronic products
+- ➕ Add items to a shopping cart
+- ❤️ Manage a wishlist
+- 💳 Checkout process
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** – Frontend framework
+- **Tailwind CSS** – Styling
+- **Swiper** – Product sliders
+- **API & Database** – Fetching product data (handled by backend teammate)
+
+## Installation
+
+To set up Cyber E Store locally, follow these steps:
+
+### 1️⃣ Clone the repository:
+
+```sh
+git clone https://github.com/sarra.ramezani/cyber-e-store.git
+cd cyber-e-store
+```
+
+### 2️⃣ Install dependencies:
+
+```sh
+npm install
+```
+
+### 3️⃣ Install Tailwind CSS and Swiper:
+
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install swiper
+```
+
+### 4️⃣ Start the development server:
+
+```sh
+npm run dev
+```
+
+## Deployment
+
+Cyber E Store is open source and available on GitHub. You can explore the folder structure in the repository.
+
+## Contributing
+
+This project is open source. Feel free to fork the repository and explore the code!
+
+## Live Demo
+
+[🔗 [Cyber E Store](http://localhost:5173/cyber-e-store/)]
