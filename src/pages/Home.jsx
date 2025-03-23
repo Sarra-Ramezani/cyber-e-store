@@ -16,6 +16,7 @@ import HeadphonesCategoryIcon from "../assets/icons/Headphones-category.svg";
 import ComputerCategoryIcon from "../assets/icons/Computer-category.svg";
 import GamingCategoryIcon from "../assets/icons/Gaming-category.svg";
 import ProductCard from "../components/ProductCard.jsx";
+import ProductSlider from "../components/ProductSlider.jsx";
 export default function Home() {
   const banners = [
     {
@@ -174,6 +175,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <ProductSlider></ProductSlider>
     </div>
   );
 }
