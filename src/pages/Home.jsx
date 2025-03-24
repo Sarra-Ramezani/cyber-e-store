@@ -17,6 +17,9 @@ import ComputerCategoryIcon from "../assets/icons/Computer-category.svg";
 import GamingCategoryIcon from "../assets/icons/Gaming-category.svg";
 import ProductCard from "../components/ProductCard.jsx";
 import ProductSlider from "../components/ProductSlider.jsx";
+import FooterBanner from "../assets/images/footer-banner.png";
+import ProductCardsContainer from "../components/ProductCardsContainer.jsx";
+import Footer from "../components/Footer.jsx";
 export default function Home() {
   const banners = [
     {
@@ -74,17 +77,6 @@ export default function Home() {
       categoryIcon: GamingCategoryIcon,
       categoryTitle: "Gaming",
     },
-  ];
-
-  const productCards = [
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
-    { image: Banner1, name: "Airpods Promax", price: "900" },
   ];
 
   return (
@@ -162,20 +154,27 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div
-          id="products-container"
-          className=" flex flex-row justify-center gap-4 flex-wrap"
-        >
-          {productCards.map((product) => (
-            <ProductCard
-              image={product.image}
-              name={product.name}
-              price={product.price}
-            />
-          ))}
-        </div>
+        <ProductCardsContainer></ProductCardsContainer>
       </section>
       <ProductSlider></ProductSlider>
+      {/* Discounted Products */}
+      <section className="bg-white py-14 px-4 sm:px-40 flex flex-col gap-8 ">
+        <h2 className="text-black font-medium text-2xl tracking-wider">
+          Discounts up to -50%
+        </h2>
+        <ProductCardsContainer></ProductCardsContainer>
+      </section>
+      {/* Footer Banner */}
+      <section className="bg-[url(../assets/images/footer-banner.png)] flex flex-col items-center gap-10 bg-cover  w-full h-[512px] px-4 py-28 text-center">
+        <h2 className="font-[100] text-7xl">
+          Big Summer <span className="font-light">Sale</span>
+        </h2>
+        <p className="text-[#787878] font-normal text-md">
+          Commodo fames vitae vitae leo mauris in. Eu consequat.
+        </p>
+        <ShopNowBtn className="border-white py-4 w-48 text-white" />
+      </section>
+      <Footer></Footer>
     </div>
   );
 }

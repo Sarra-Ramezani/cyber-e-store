@@ -61,7 +61,7 @@ export default function ProductSlider() {
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
-            <ShopNowBtn className="border-black text-black py-4 w-[60%]"></ShopNowBtn>
+            <ShopNowBtn className="border-black text-black py-4 w-[60%] "></ShopNowBtn>
           </div>
         </SwiperSlide>
       </Swiper>
