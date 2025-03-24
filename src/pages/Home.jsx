@@ -17,7 +17,6 @@ import ComputerCategoryIcon from "../assets/icons/Computer-category.svg";
 import GamingCategoryIcon from "../assets/icons/Gaming-category.svg";
 import ProductCard from "../components/ProductCard.jsx";
 import ProductSlider from "../components/ProductSlider.jsx";
-import FooterBanner from "../assets/images/footer-banner.png";
 import ProductCardsContainer from "../components/ProductCardsContainer.jsx";
 import Footer from "../components/Footer.jsx";
 export default function Home() {
@@ -165,7 +164,7 @@ export default function Home() {
         <ProductCardsContainer></ProductCardsContainer>
       </section>
       {/* Footer Banner */}
-      <section className="bg-[url(../assets/images/footer-banner.png)] flex flex-col items-center gap-10 bg-cover  w-full h-[512px] px-4 py-28 text-center">
+      <section className="bg-[url(../public/footer-banner.png)] flex flex-col items-center gap-10 bg-cover  w-full h-[512px] px-4 py-28 text-center">
         <h2 className="font-[100] text-7xl">
           Big Summer <span className="font-light">Sale</span>
         </h2>
