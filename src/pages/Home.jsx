@@ -19,6 +19,9 @@ import ProductCard from "../components/ProductCard.jsx";
 import ProductSlider from "../components/ProductSlider.jsx";
 import ProductCardsContainer from "../components/ProductCardsContainer.jsx";
 import Footer from "../components/Footer.jsx";
+
+// gonna delete later
+import Products from "./Products.jsx";
 export default function Home() {
   const banners = [
     {
@@ -164,7 +167,7 @@ export default function Home() {
         <ProductCardsContainer></ProductCardsContainer>
       </section>
       {/* Footer Banner */}
-      <section className="bg-[url(../public/footer-banner.png)] flex flex-col items-center gap-10 bg-cover  w-full h-[512px] px-4 py-28 text-center">
+      <section className="bg-[url(../public/footer-banner.png`)] flex flex-col items-center gap-10 bg-cover  w-full h-[512px] px-4 py-28 text-center">
         <h2 className="font-[100] text-7xl">
           Big Summer <span className="font-light">Sale</span>
         </h2>
@@ -174,6 +177,8 @@ export default function Home() {
         <ShopNowBtn className="border-white py-4 w-48 text-white" />
       </section>
       <Footer></Footer>
+
+      <Products></Products>
     </div>
   );
 }
