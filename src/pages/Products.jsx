@@ -4,6 +4,7 @@ import FiltersIcon from "../assets/icons/Filters.svg";
 import Pagination from "../components/Pagination.jsx";
 import ProductCardsContainer from "../components/ProductCardsContainer.jsx";
 import Breadcrumbs from "../components/Breadcrumbs.jsx";
+import Filters from "../components/Filters.jsx";
 export default function Products() {
   const productsCount = 85;
   return (
@@ -40,7 +41,7 @@ export default function Products() {
             </label>
             <input
               type="text"
-              className="text-lg"
+              className="text-lg w-full"
               value={productsCount}
               disabled
             />
@@ -49,6 +50,8 @@ export default function Products() {
         <ProductCardsContainer></ProductCardsContainer>
         <Pagination></Pagination>
       </div>
+      <Filters></Filters>
+
       <Footer></Footer>
     </section>
   );

@@ -20,8 +20,6 @@ import ProductSlider from "../components/ProductSlider.jsx";
 import ProductCardsContainer from "../components/ProductCardsContainer.jsx";
 import Footer from "../components/Footer.jsx";
 
-// gonna delete later
-import Products from "./Products.jsx";
 export default function Home() {
   const banners = [
     {
@@ -113,18 +111,16 @@ export default function Home() {
           />
         </section>
       </div>
-      <section
-        id="browse-by-category"
-        className="bg-[#FAFAFA] py-16 px-4 flex flex-col gap-12 sm:py-20 sm:px-40"
-      >
+      {/* Browse By category */}
+      <section className="bg-[#FAFAFA] py-16 px-4 flex flex-col gap-12 sm:py-20 sm:px-40">
         <div className="flex flex-row justify-between">
           <h2 className="text-black font-medium text-2xl tracking-wider">
             Browse By Category
           </h2>
-          <div className="scrolling flex flex-row gap-9 w-20">
+          {/* <div className="scrolling flex flex-row gap-9 w-20">
             <img src={ScrollLeft} alt="scroll left" />
             <img src={ScrollRight} alt="scroll right" />
-          </div>
+          </div> */}
         </div>
         <div
           id="category-card-container"
@@ -177,8 +173,6 @@ export default function Home() {
         <ShopNowBtn className="border-white py-4 w-48 text-white" />
       </section>
       <Footer></Footer>
-
-      <Products></Products>
     </div>
   );
 }

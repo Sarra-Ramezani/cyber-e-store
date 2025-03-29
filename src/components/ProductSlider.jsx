@@ -21,10 +21,10 @@ export default function ProductSlider() {
         }}
       >
         <SwiperSlide>
-          <div className="w-full  bg-white flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-[80%]  bg-white flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
-            <p className="font-medium text-[#909090] text-sm text-wrap">
+            <p className="font-medium text-[#909090] text-sm text-wrap text-center">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
@@ -32,10 +32,10 @@ export default function ProductSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full  bg-[#F9F9F9] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-[80%]  bg-[#F9F9F9] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
-            <p className="font-medium text-[#909090] text-sm text-wrap">
+            <p className="font-medium text-[#909090] text-sm text-wrap text-center">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
@@ -43,10 +43,10 @@ export default function ProductSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full  bg-[#EAEAEA] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-[80%]  bg-[#EAEAEA] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-black text-5xl">PS5</h3>
-            <p className="font-medium text-[#909090] text-sm text-wrap">
+            <p className="font-medium text-[#909090] text-sm text-wrap text-center">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
@@ -54,10 +54,10 @@ export default function ProductSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full  bg-[#2C2C2C] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
+          <div className="w-[80%]  bg-[#2C2C2C] flex flex-col gap-4 justify-center sm:items-start items-center py-14 px-8">
             <img className="w-2/3" src={PS5} alt="" />
             <h3 className="font-light text-white text-5xl">PS5</h3>
-            <p className="font-medium text-[#909090] text-sm text-wrap">
+            <p className="font-medium text-[#909090] text-sm text-wrap text-center">
               iPad combines a magnificent 10.2-inch Retina display, incredible
               performance, multitasking and ease of use.
             </p>
