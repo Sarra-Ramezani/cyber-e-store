@@ -6,12 +6,17 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import Products from "./pages/Products.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
 
 const router = createBrowserRouter([
-  { path: "/", element: <App /> },
-  { path: "/login", element: <Login /> },
-  { path: "/signup", element: <Signup /> },
-  { path: "/products", element: <Products /> },
+  { path: "/cyber/", element: <App /> },
+  { path: "/cyber/login", element: <Login /> },
+  { path: "/cyber/signup", element: <Signup /> },
+  { path: "/cyber/products", element: <Products /> },
+  {
+    path: "/cyber/details",
+    element: <ProductDetails />,
+  },
 ]);
 const root = document.getElementById("root");
 
